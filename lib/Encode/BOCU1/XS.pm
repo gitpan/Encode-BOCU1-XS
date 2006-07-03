@@ -11,7 +11,7 @@ use Encode::Alias;
 define_alias( qr/^bocu.1$/i => '"bocu1"');
 define_alias( qr/^bocu$/i => '"bocu1"');
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require XSLoader;
 XSLoader::load('Encode::BOCU1::XS', $VERSION);
@@ -54,16 +54,20 @@ Source files found under IBM_CODES/ directory
  * bocu1.h (constants and macros)
  * bocu1.c (encoder and decoder functions)
  * bocu1tst.c (test code with main() function)
-from "Sample C Sources" on http://www.unicode.org/notes/tn6/
-are Copyright (C) 2002, International Business Machines Corporation and others.
+from "Sample C Code" on http://www.unicode.org/notes/tn6/ are
 
-These codes are licensed under the X license (ICU version).
+Copyright (C) 2002, International Business Machines Corporation and others.
+All Rights Reserved.
+
+The "Sample C Code" is under the X license (ICU version).
 ICU License : http://dev.icu-project.org/cgi-bin/viewcvs.cgi/*checkout*/icu/license.html
-
-Other files are Copyright (C) 2006, Naoya Tozuka E<lt>naoyat@naochan.comE<gt>.
-As with the original C code, this port is licensed under the X license (ICU version).
 
 BOCU "Binary-Ordered Compression For Unicode" is a patent-protected technology of IBM.
 (US Patent 6737994)
+
+The XS glue code is written by Naoya Tozuka and 
+Copyright (C) 2006, Naoya Tozuka E<lt>naoyat@naochan.comE<gt>.
+As with the original C code, this port is licensed under the X license (ICU version).
+also distributed under the ICU License.
 
 =cut
