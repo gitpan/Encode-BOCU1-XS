@@ -1,0 +1,51 @@
+Encode-BOCU1-XS
+===============
+
+   Version 0.01 - 03 July 2006
+
+   Encode::BOCU1::XS is a Perl extension for encoding / decoding BOCU-1 string.
+   Works as part of Encode.pm.
+
+   It uses a lot less CPU than Encode-BOCU1, the original pure-perl module.
+
+
+INSTALLATION
+
+ (1) Install ICU(4C) Unicode library:
+   http://www-306.ibm.com/software/globalization/icu/downloads.jsp
+
+ (2) Type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   sudo make install
+
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+    The International Component for Unicode (ICU)
+      http://www-306.ibm.com/software/globalization/icu/
+
+    BOCU-1 Sample C Codes
+      http://www.unicode.org/notes/tn6/
+      (copies of the sample codes are found under IBM_CODES/)
+
+
+COPYRIGHT AND LICENCE
+
+Source files found under IBM_CODES/ directory
+ * bocu1.h (constants and macros)
+ * bocu1.c (encoder and decoder functions)
+ * bocu1tst.c (test code with main() function)
+from "Sample C Sources" on http://www.unicode.org/notes/tn6/
+are Copyright (C) 2002, International Business Machines Corporation and others.
+
+These codes are distributed under the X license (ICU version).
+(see ./ICU_LICENSE)
+
+Other files are Copyright (C) 2006, Naoya Tozuka <naoyat@naochan.com>, and 
+also distributed under the ICU License.
+
